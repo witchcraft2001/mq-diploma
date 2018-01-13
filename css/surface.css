@@ -97,6 +97,42 @@ header .logo svg g g path {
   fill: white;
 }
 
+section {
+  min-height: 100vh;
+  position: relative;
+}
+
+section h1 {
+  font-family: OpenSans-Bold;
+  font-size: 5rem;
+  color: #e7e7e7;
+  text-transform: uppercase;
+}
+
+section picture {
+  position: absolute;
+}
+
+.athlets h1 {
+  margin-left: 50%;
+}
+
+.athlets ol {
+  margin-left: 50%;
+}
+
+.players h1 {
+  margin-right: 50%;
+}
+
+.players ol {
+  margin-right: 50%;
+}
+
+.players picture {
+  left: 50%;
+}
+
 body {
   margin: 0;
   font-family: OpenSans-Regular, sans-serif;
