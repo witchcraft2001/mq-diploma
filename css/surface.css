@@ -10,7 +10,7 @@
 
 header {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 110px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -57,17 +57,44 @@ header .logo svg g g path {
   margin-left: auto;
 }
 
-.store-buttons > a {
+.store-buttons {
+  display: flex;
+}
+
+.store-buttons a {
+    text-decoration: none;
+}
+
+.store-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 0.75rem;
   background-color: #5E42B0;
   color: #FFF;
   border: 0px;
   border-radius: 37px 37px;
-  margin: 10px;
-  padding: 5px;
+  margin: 0 25px;
   text-decoration: none;
   width: 310px;
   height: 77px;
+}
+
+.store-button__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 26px;
+}
+
+.store-button__text-wrapper span:last-child {
+  font-family: OpenSans-Bold;
+}
+
+.store-button__icon {
+  margin-left: 36px;
+  width: 48px;
+  height: 48px;
+  fill: white;
 }
 
 body {
@@ -79,16 +106,28 @@ body {
   header {
     background-image: url(../images/football_1920.jpg);
   }
+
+  .store-buttons {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 960px) {
   header {
     background-image: url(../images/football_768.jpg);
   }
+
+  .store-buttons {
+    flex-direction: row;
+  }
 }
 
 @media (max-width: 640px) {
   header {
     background-image: url(../images/football_320.jpg);
+  }
+
+  .store-buttons {
+    flex-direction: column;
   }
 }
