@@ -1,0 +1,62 @@
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+header {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #151334;
+  color: #FFF;
+  height: 100vh;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+div .store-buttons {
+}
+
+.store-buttons > a {
+  font-size: 0.75rem;
+  background-color: #5E42B0;
+  color: #FFF;
+  border: 0px;
+  border-radius: 37px 37px;
+  margin: 10px;
+  padding: 5px;
+  text-decoration: none;
+  width: 310px;
+  height: 77px;
+}
+
+body {
+  margin: 0;
+  font-family: OpenSans-Regular, sans-serif;
+}
+
+@media (min-width: 961px) {
+  header {
+    background-image: url(../images/football_1920.jpg);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  header {
+    background-image: url(../images/football_768.jpg);
+  }
+}
+
+@media (max-width: 640px) {
+  header {
+    background-image: url(../images/football_320.jpg);
+  }
+}
