@@ -9,20 +9,52 @@
 }
 
 header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-color: #151334;
-  color: #FFF;
-  height: 100vh;
+  color: #fff;
+  min-height: 100vh;
+  font-size: 5.625em;
 }
 
 header .logo {
-  font-weight: bold;
-  font-size: 2rem;
+  width: 191px;
+  height: 52px;
 }
 
-div .store-buttons {
+header .logo svg g path {
+  fill: white;
+}
+
+header .logo svg g g {
+  stroke: white !important;
+}
+
+header .logo svg g g path {
+  fill-opacity: 0;
+}
+
+.slogan-items {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  font-family: OpenSans-Bold, sans-serif;
+}
+
+.slogan:first-child {
+  margin-right: auto;
+}
+
+.slogan:last-child {
+  margin-left: auto;
 }
 
 .store-buttons > a {
