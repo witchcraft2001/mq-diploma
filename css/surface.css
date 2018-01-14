@@ -68,6 +68,7 @@ header .logo svg g g path {
 .store-button {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   font-size: 0.75rem;
   background-color: #5E42B0;
@@ -91,7 +92,6 @@ header .logo svg g g path {
 }
 
 .store-button__icon {
-  margin-left: 36px;
   width: 48px;
   height: 48px;
   fill: white;
@@ -109,28 +109,97 @@ section h1 {
   text-transform: uppercase;
 }
 
+section dl {
+  margin: 0;
+  counter-reset: my-counter;
+}
+
+section dt::before {
+  content: counter(my-counter, decimal-leading-zero);
+  counter-increment: my-counter;
+  font-family: OpenSans-Bold;
+  font-size: 14px;
+  color: #000000;
+  padding-right: 10px;
+}
+
 section picture {
   position: absolute;
 }
 
-.athlets h1 {
-  margin-left: 50%;
+dt {
+  margin: 0px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
-.athlets ol {
-  margin-left: 50%;
+dd {
+  margin: 0px;
+  padding-bottom: 60px;
+}
+
+section h1 {
+  padding-top: 100px;
+  padding-bottom: 0px;
+  margin: 0;
+}
+
+section dt {
+  color: #c1c1c1;
+  font-family: OpenSans-Bold;
+  font-size: 1.6875rem;
+  text-transform: uppercase;
+}
+
+.athlets h1 {
+  padding-left: 50%;
+}
+
+.athlets dt, .athlets dd {
+  padding-left: 50%;
+  padding-right: 200px;
+}
+
+dt.athlets-second, dd.athlets-second {
+  background-color: #f6f4fa;
+}
+
+dt.athlets-last, dd.athlets-last {
+  background-color: #5e42b0;
+}
+
+dd.athlets-last {
+  color: #ffffff;
 }
 
 .players h1 {
-  margin-right: 50%;
+  padding-right: 50%;
+  padding-left: 200px;
 }
 
-.players ol {
-  margin-right: 50%;
+.players dt, .players dd {
+  padding-right: 50%;
+  padding-left: 200px;
 }
 
 .players picture {
   left: 50%;
+}
+
+dt.players-second, dd.players-second {
+  background-color: #f5f6f7;
+}
+
+dt.players-last, dd.players-last {
+  background-color: #0a0e34;
+}
+
+dd.players-last {
+  color: #ffffff;
+}
+
+dt.players-last::before {
+  color: #9173e6;
 }
 
 body {
